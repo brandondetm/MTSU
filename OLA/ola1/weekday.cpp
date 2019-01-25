@@ -29,7 +29,7 @@ int main()
     }
     else
     {
-      cout << "Your imput value is not correct." << endl << "The computation is not carried out." << endl;
+      cout << "Your input value is not correct." << endl << "The computation is not carried out." << endl;
     }
   }
 
