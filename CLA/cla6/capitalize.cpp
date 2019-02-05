@@ -30,7 +30,7 @@ int main()
             sentence[i] = tolower(sentence[i]);
    }
 
-   cout << sentence <<endl; // DISPLAY RESULTS
+   cout << "Modified Text: " << sentence <<endl; // DISPLAY RESULTS
 
    return 0;
 }
