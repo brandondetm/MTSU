@@ -9,6 +9,7 @@ This lab had me capitalizing the first letter in words.
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 int main()
 {
@@ -16,8 +17,8 @@ int main()
 
    char sentence[size];
 
-   std::cout << "Enter text: "; // PROMPT USER FOR SENTENCE
-   std::cin.getline(sentence, size); // STORE THE INPUT
+   cout << "Enter text: "; // PROMPT USER FOR SENTENCE
+   cin.getline(sentence, size); // STORE THE INPUT
 
    sentence[0] = toupper(sentence[0]); // UPPERCASE EACH LETTER
 
@@ -29,7 +30,7 @@ int main()
             sentence[i] = tolower(sentence[i]);
    }
 
-   std::cout << sentence << std::endl; // DISPLAY RESULTS
+   cout << sentence <<endl; // DISPLAY RESULTS
 
    return 0;
 }

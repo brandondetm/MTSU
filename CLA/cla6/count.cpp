@@ -12,24 +12,24 @@ in a string.
 #include <string>
 using namespace std;
 
-int count( const std::string& sentence );
+int count( const string& sentence );
 
 int main()
 {
-	std::string sentence;
+	string sentence;
 
-	std::cout << "Enter text: "; // PROMPT USER TO INPUT SENTENCE
-	std::cin.getline(sentence); // STORE THE SENTENCE IN STRING
+	cout << "Enter text: "; // PROMPT USER TO INPUT SENTENCE
+	getline(cin, sentence); // STORE THE SENTENCE IN STRING
 
 	int spaces = count(sentence); // FUNCTION CALL
 
-	std::cout << "Number of spaces: " << spaces << std::endl; // PRINT RESULTS
-	std::cin.ignore();
+	cout << "There are " << spaces << " words in this sentence." << endl; // PRINT RESULTS
+	cin.ignore();
 
 	return 0;
 }
 
-int count( const std::string& sentence ) // FUNCTION TO COUNT SPACES
+int count( const string& sentence ) // FUNCTION TO COUNT SPACES
 {
 	int spaces = 1; // THIS ONE COUNTS FOR THE END SPACE
 
